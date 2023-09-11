@@ -1,0 +1,176 @@
+.footer-background {
+    background-image: url(../images/footer-background-image.png);
+    width: 100%;
+    background-size: cover;
+    padding: 50px 0;
+    margin-top: 70px;
+
+    .all-footer {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: var(--white);
+            content: "";
+            bottom: -40px;
+        }
+
+
+        .footer-logo {
+            width: 100%;
+            color: var(--white);
+
+            img {
+                width: 154px;
+            }
+
+            ul {
+
+                li {
+                    display: flex;
+                    padding: 10px 0;
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 400;
+                        width: 100%;
+                        padding-left: 15px;
+                    }
+
+                    a {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: var(--white);
+                        padding-left: 15px;
+                    }
+
+                    &:last-child {
+                        a {
+                            background: var(--light-gray);
+                            padding: 10px;
+                            border-radius: 50%;
+                            margin: 0 5px;
+                            transition: 0.5s all ease;
+
+                            &:hover {
+                                background: var(--brand-green);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .about-us {
+            width: 100%;
+            color: var(--white);
+            padding-left: 35px;
+
+            h2 {
+                font-size: 24px;
+                padding-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    padding: 5px 0;
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: 0.5s all ease;
+
+                        &:hover {
+                            color: var(--brand-green);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .our-mission {
+            width: 100%;
+            color: var(--white);
+
+            h2 {
+                font-size: 24px;
+                padding-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    padding: 5px 0;
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: 0.5s all ease;
+
+                        &:hover {
+                            color: var(--brand-green);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .newsletter {
+            width: 100%;
+            color: var(--white);
+
+            h2 {
+                font-size: 24px;
+                padding-bottom: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            input {
+                padding: 18px 30px;
+                border-radius: 50px;
+                border: none;
+                margin: 15px 0;
+            }
+
+            .subscribe {
+                a {
+                    font-size: 20px;
+                    background: var(--brand-green);
+                    padding: 16px 45px;
+                    color: var(--white);
+                    border-radius: 50px;
+                    display: inline-block;
+                }
+            }
+        }
+
+    }
+
+
+    .footer-end {
+        text-align: center;
+        padding-top: 70px;
+
+        a {
+            font-size: 20px;
+            color: var(--white);
+        }
+    }
+}

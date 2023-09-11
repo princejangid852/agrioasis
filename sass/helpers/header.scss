@@ -1,0 +1,137 @@
+.header-background {
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            img {
+                width: 250px;
+            }
+        }
+
+        .hamburger-icon {
+            display: none;
+
+            a {
+                padding: 0 10px;
+                img {
+                    width: 30px;
+                    vertical-align: bottom;
+                    
+                }
+            }
+        }
+
+        .menu {
+            >ul {
+                display: flex;
+                justify-content: space-between;
+
+                >li {
+                    padding: 0 15px;
+                    position: relative;
+                    transition: 0.5s all ease;
+
+                    &:nth-child(5) {
+                        padding-left: 70px;
+
+                        img {
+                            width: 24px;
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            background-color: var(--brand-green);
+                            padding: 20px 40px;
+                            border-radius: 50px;
+                            color: var(--white);
+                            margin-left: 20px;
+                        }
+                    }
+
+                    &:first-child {
+                        a {
+                            color: var(--brand-green);
+                        }
+                    }
+
+                    &:last-child:hover {
+                        a {
+                            background: var(--black-hover);
+                        }
+                    }
+
+                    a {
+                        font-size: 18px;
+                        color: var(--black);
+                        font-weight: 500;
+                        transition: 0.5s all ease;
+                        padding: 35px 0;
+
+                        img {
+                            width: 15px;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    &:not(:last-child):hover>a {
+                        color: var(--brand-green);
+                    }
+
+                    &:hover ul {
+                        visibility: visible;
+                        opacity: 1;
+                        transform: rotateX(0);
+                    }
+
+                    ul {
+                        background: var(--white);
+                        width: 250px;
+                        box-shadow: var(--our-team-shadow);
+                        position: absolute;
+                        flex-direction: column;
+                        left: 0;
+                        top: 72px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: translateY(6%);
+                        transition: transform .4s, opacity .1s;
+
+                        li {
+                            padding: 15px 20px;
+                            border-bottom: 1px solid var(--get-tuch-color);
+
+                            &:hover {
+                                background: var(--brand-green);
+                                color: var(--white);
+                            }
+
+                            a {
+                                color: var(--black);
+                                transition: 0.5s all ease;
+                                font-weight: 500;
+                            }
+
+                            &:hover a {
+                                color: var(--white);
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

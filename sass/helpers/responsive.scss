@@ -1,0 +1,291 @@
+@media screen and (max-width:767px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+
+    .header-background {
+        padding: 30px 0;
+
+        .header {
+            .menu {
+                position: absolute;
+                position: fixed;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                display: none;
+
+                >ul {
+                    align-items: start;
+                    flex-direction: column;
+                    background: var(--white);
+                    width: 280px;
+                    box-shadow: var(--blog-shadow);
+
+
+                    >li {
+                        padding: 18px 15px;
+                        border-bottom: 1px solid var(--light-gray);
+                        width: 100%;
+
+                        &:nth-child(5) {
+                            display: none;
+                        }
+
+                        &:last-child a {
+                            background: none;
+                            color: var(--black);
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            .hamburger-icon {
+                display: block;
+            }
+        }
+    }
+
+    .slider-image {
+        img {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slider-text {
+            width: 100%;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .organic-farming-section {
+        flex-direction: column;
+
+        .organic-farming-image {
+            width: 100%;
+        }
+
+        .organic-farming {
+            width: 100%;
+            padding-top: 20px;
+
+            h2 {
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .our-product-background {
+
+        .our-product {
+            text-align: center;
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    text-align: center;
+                    padding: 20px 0;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+
+    .bloom-day {
+        text-align: left;
+
+        p {
+            width: 100%;
+        }
+
+        ul {
+            flex-direction: column;
+
+            li {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .video {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .explor-project {
+        text-align: left;
+
+        p {
+            width: 100%;
+        }
+
+        ul {
+            flex-direction: column;
+            display: block;
+            white-space: nowrap;
+            overflow-x: auto;
+            margin: 0 -15px;
+
+            li {
+                width: 90%;
+                text-align: center;
+                margin-bottom: 20px;
+                display: inline-block;
+              &:first-child {
+                    margin-left: 15px;
+                }
+                &:last-child {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    .field-sales-background {
+        height: 600px;
+
+        .field-sales {
+
+            p {
+                width: 100%;
+            }
+
+            h4 {
+                width: 50%;
+            }
+        }
+    }
+
+    .our-team {
+        text-align: left;
+
+        p {
+            width: 100%;
+        }
+
+        ul {
+            flex-direction: column;
+
+            li {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .get-touch-background {
+        display: none;
+    }
+
+
+    .get-touch {
+        margin: 70px 0 0 0;
+        width: 100%;
+        padding: 15px 10px;
+
+        p {
+            width: 100%;
+        }
+
+        .get-touch-name input {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .get-touch-message {
+
+            textarea {
+                border-radius: 15px;
+                width: 100% !important;
+                outline: none;
+                height: 150px !important;
+            }
+        }
+
+        a {
+            width: 100%;
+        }
+    }
+
+
+    .Updated-news {
+        width: 100%;
+        text-align: left;
+
+        p {
+            width: 100%;
+            padding: 12px 0;
+        }
+
+        ul {
+            flex-direction: column;
+
+            li {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+
+    .footer-background {
+        width: 100%;
+
+        .all-footer {
+            flex-direction: column;
+
+            .footer-logo {
+                width: 100%;
+                padding-bottom: 40px;
+            }
+
+
+            .about-us {
+                width: 100%;
+                padding: 0 0 40px 0;
+
+                h2 {
+                    padding-bottom: 20px;
+                }
+            }
+
+
+            .our-mission {
+                width: 100%;
+                padding-bottom: 40px;
+
+                h2 {
+                    padding-bottom: 20px;
+                }
+            }
+
+            .newsletter {
+                width: 100%;
+
+                h2 {
+                    padding-bottom: 20px;
+                }
+            }
+
+        }
+    }
+}
